@@ -1,0 +1,22 @@
+* Forked the github repo
+
+https://github.com/justinjk007/devops-workshop-2020
+
+- Opened a bunch of tasks to do
+- Installed vagrant and virtual box
+- Setup infra with =vagrant up= command
+
+#+begin_src sh
+vagrant ssh # ssh into the vm we just made
+#+end_src
+
+Vagrant makes a volume mount of the folder we started vagrant in as
+`/vagrant` in the vm we made.
+
+- run tests with =nosetests=
+
+#+begin_src sh
+python app.py
+#+end_src
+
+We have setup port forwarding on vagrant, so the VMs port 5000 should be available on our local host as well.
