@@ -16,6 +16,9 @@ Vagrant makes a volume mount of the folder we started vagrant in as
 - run tests with =nosetests=
 
 #+begin_src sh
+export FLASK_APP=service:app
+flask run
+# or 
 python app.py
 #+end_src
 
